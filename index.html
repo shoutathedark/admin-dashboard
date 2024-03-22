@@ -4,49 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>Document</title>
 </head>
 <body>
-    <div class="sidebar">
+        <div class="sidebar">
 
-    </div>
-    <div class="main-content">
-        <div class="search">
-            <img src="" alt="search-icon">
-            <input type="text">
-            <img src="" alt="notification-icon">
-            <img src="" alt="profile-pic">
-            <div class="name"></div>
-        </div>
-    
-        <div class="welcome">
-            <img src="" alt="profile-pic-larger">
-            <div class = "welcome-message">
-                Hi there, Matthew Tan (@mthy)
+            <div class="sidebar-item dashboard">
+                <span class="material-symbols-outlined">
+                    Dashboard
+                </span>
+                <p>Dashboard</p>
             </div>
-            <button class="menu-button"></button>
-            <button class="menu-button"></button>
-            <button class="menu-button"></button>
-        </div>
-    
-        <div class="content">
-            <div class = "projects">
-                <p>Your Projects</p>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
+            <div class="sidebar-item">
+
+                <div class = "displayflex">
+                    <span class="material-symbols-outlined">
+                        home
+                    </span>
+                    <p>Home</p>
+                </div>
+
+                <div class = "displayflex">
+                    <span class="material-symbols-outlined">
+                        person
+                    </span>
+                    <p>Profile</p>
+                </div>
+
+                <div class="displayflex">
+                    <span class="material-symbols-outlined">
+                        chat_bubble
+                    </span>
+                    <p>Messages</p>
+                </div>
+                <div class = "displayflex">
+                    <span class="material-symbols-outlined">
+                        history
+                    </span>
+                    <p>History</p>
+                </div>
+                <div class = "displayflex">
+                    <span class="material-symbols-outlined">
+                        task
+                    </span>
+                    <p>Tasks</p>
+                </div>
+                <div class = "displayflex">
+                    <span class="material-symbols-outlined">
+                        groups
+                    </span>
+                    <p>Communities</p>
+                </div>
             </div>
-    
-            <div class = "announcements">
+            <div class="sidebar-item">
+                <div class = "displayflex">
+                    <span class="material-symbols-outlined">
+                        settings
+                        </span>
+                        <p>Settings</p>
+                    </div>
+                <div class = "displayflex">
+                    <span class="material-symbols-outlined">
+                        help
+                        </span>
+                        <p>Support</p>
+                    </div>
+                <div class = "displayflex">
+                    <span class="material-symbols-outlined">
+                        verified_user
+                        </span>
+                        <p>Privacy</p>
+                    </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="search">
+                <span class="material-symbols-outlined justify-self-end">
+                    search
+                </span>
+                <input id = "search" type="search" placeholder="Search">
+                <span class="material-symbols-outlined justify-self-end">
+                    notifications_active
+                </span>
+                <img class = "justify-self-center" src="dog-24px.png" alt="profile-pic">
+                <div class="name">Matthew Tan</div>
+            </div>
+        
+            <div class="welcome">
+                <img class="justify-self-center" src="dog-64px.png" alt="profile-pic-larger">
+                <div class = "welcome-message">
+                    Hi there, <br/>
+                    Matthew Tan (@mthy)
+                </div>
+                <button class="menu-button">New</button>
+                <button class="menu-button">Upload</button>
+                <button class="menu-button">Share</button>
+            </div>
+        
+            <div class="content">
+                <p class = "project-title">Your Projects</p>
                 <p>Announcements</p>
-                <div class="card"></div>
-                <p>Trending</p>
-                <div class="card"></div>
+                <div class = "projects">
+                    <div class="card">
+                        <p>
+                            Super Cool Project <br/>
+                            Some super cool description about some super cool project that I'm doing.
+                        </p>
+                    </div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                </div>
+        
+                <div class = "announcements">
+                    <div class="card"></div>
+                    <p>Trending</p>
+                    <div class="card"></div>
+                </div>
             </div>
         </div>
-    </div>
+
+        <div class="footer"></div>
+    
 </body>
 </html>

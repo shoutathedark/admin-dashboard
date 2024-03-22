@@ -11,17 +11,27 @@
   body{
     font-family: 'Allerta Stencil';
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    height: 100vh;
+    grid-template-columns: fit-content(20%) 4fr;
+    grid-template-rows: 98% 2%;;
+    min-height: 100vh;
+  }
+
+  .displayflex{
+    display: flex;
   }
 
   .main-content{
     display: grid;
-    grid-template-rows: 1fr 2fr 80%;
+    grid-template-rows: 1fr 1.3fr 88%;
   }
 
   .content{
     background-color: lightgray;
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+    grid-template-rows: 5% 95%;
+    gap: 10px;
+    padding: 10px;
   }
 
   .search, .welcome{
@@ -29,7 +39,103 @@
   }
 
   .sidebar{
-    background-color: lightblue;
+    background-color: rgb(0, 149, 255);
     color: white;
+    display: grid;
+    grid-template-rows: 1fr 6fr 2fr 40%;
+    padding: 16px;
   }
 
+  .sidebar-item{
+    display: grid;
+  }
+
+  .sidebar-item p{
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  .sidebar-item.dashboard{
+    grid-template-columns: 1fr 9fr;
+  }
+
+  .search{
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr 1fr 1fr;
+    padding: 10px;
+  }
+
+  #search{
+    background-color: azure;
+    padding: 6px;
+    border-radius: 8px;
+    height: 30px;
+    border-style: none;
+    width: 80%;
+  }
+
+  .justify-self-end{
+    justify-self: end;
+  }
+
+  .justify-self-center{
+    justify-self: center;
+  }
+
+  .welcome{
+    display: grid;
+    grid-template-columns: 1.5fr 4fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .projects .card{
+    background-color: #FFFFFF;
+    color: black;
+    border-radius: 6px;
+    min-height: 150px;
+    max-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .announcements .card{
+    background-color: #FFFFFF;
+    color: black;
+    text-align: center;
+    min-height: 150px;
+    max-height: 300px;
+    border-radius: 6px;
+  }
+
+  .project-title{
+    grid-column: 1/2;
+    grid-row:1/2;
+  }
+
+  .announcements{
+    display: grid;
+    grid-template-rows: 5fr 1fr 7fr;
+  }
+
+  .menu-button{
+    background-color: rgb(0, 149, 255);
+    height: 30px;
+    border-radius: 12px;
+    color: white;
+    border-style: none;
+  }
+
+  .footer{
+    background-color: darkgreen;
+    grid-column: 1/3;
+  }
